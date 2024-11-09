@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/cardapio.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cardápio Erick</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#pizzas">Pizzas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bebidas">Bebidas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#total_botao">Total</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="text-center mt-4">Cardápio</h1>
+
+        <!-- Pizzas Section -->
+         <h2 class="text-center mt-4">Sabores</h2>
+        <div id="pizzas" class="row mb-4">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/pizza portuguesa.png" class="card-img-top" alt="Pizza Portuguesa">
+                    <div class="card-body">
+                        <h3 class="card-title">Pizza Portuguesa</h3>
+                        <p class="card-text">R$50,00</p>
+                        <input min="0" id="pizza_portuguesa" name="pizza_portuguesa" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/pizza mussarela.webp" class="card-img-top" alt="Pizza Mussarela">
+                    <div class="card-body">
+                        <h3 class="card-title">Pizza Mussarela</h3>
+                        <p class="card-text">R$50,00</p>
+                        <input min="0" id="pizza_mussarela" name="pizza_mussarela" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/pizza calabresa.png" class="card-img-top" alt="Pizza Calabresa">
+                    <div class="card-body">
+                        <h3 class="card-title">Pizza Calabresa</h3>
+                        <p class="card-text">R$55,00</p>
+                        <input min="0" id="pizza_calabresa" name="pizza_calabresa" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/pizza frango catupiry.png" class="card-img-top" alt="Pizza Frango">
+                    <div class="card-body">
+                        <h3 class="card-title">Pizza Frango com catupiry</h3>
+                        <p class="card-text">R$52,00</p>
+                        <input min="0" id="pizza_frango" name="pizza_frango" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/pizza quatro queijos.png" class="card-img-top" alt="Pizza Quatro Queijos">
+                    <div class="card-body">
+                        <h3 class="card-title">Pizza Quatro Queijos</h3>
+                        <p class="card-text">R$58,00</p>
+                        <input min="0" id="pizza_quatro_queijos" name="pizza_quatro_queijos" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/pizza calabresa queijo.png" class="card-img-top" alt="Pizza Calabresa com Queijo">
+                    <div class="card-body">
+                        <h3 class="card-title">Pizza Calabresa com Queijo</h3>
+                        <p class="card-text">R$59,00</p>
+                        <input min="0" id="pizza_calabresa_queijo" name="pizza_calabresa_queijo" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bebidas Section -->
+        <h2 class="text-center mt-4">Bebidas</h2>
+        <div id="bebidas" class="row mb-4">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/fanta laranja.png" class="card-img-top" alt="Fanta Laranja">
+                    <div class="card-body">
+                        <h3 class="card-title">Fanta Laranja</h3>
+                        <p class="card-text">R$5,00</p>
+                        <input min="0" id="fanta_laranja" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/coca cola.png" class="card-img-top" alt="Coca Cola">
+                    <div class="card-body">
+                        <h3 class="card-title">Coca Cola</h3>
+                        <p class="card-text">R$5,00</p>
+                        <input min="0" id="coca_cola" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/guarana.png" class="card-img-top" alt="Guaraná">
+                    <div class="card-body">
+                        <h3 class="card-title">Guaraná</h3>
+                        <p class="card-text">R$5,00</p>
+                        <input min="0" id="guarana" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/fanta uva.png" class="card-img-top" alt="Suco de Uva">
+                    <div class="card-body">
+                        <h3 class="card-title">Fanta Uva</h3>
+                        <p class="card-text">R$6,00</p>
+                        <input min="0" id="suco_uva" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/suco laranja.png" class="card-img-top" alt="Suco de Laranja">
+                    <div class="card-body">
+                        <h3 class="card-title">Suco de Laranja</h3>
+                        <p class="card-text">R$6,00</p>
+                        <input min="0" id="suco_laranja" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/suco maracuja.png" class="card-img-top" alt="Suco de Maracujá">
+                    <div class="card-body">
+                        <h3 class="card-title">Suco de Maracujá</h3>
+                        <p class="card-text">R$10,00</p>
+                        <input min="0" id="suco_maracuja" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center" id="total_botao">
+            <button onclick="Calcular()" data-toggle="modal" data-target="#modal_total" class="btn btn-success ">Calcular</button>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="modal_total" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Total</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div id="total" class="text-center"></div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="fechar_modal" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" id="confirmar_pedido" onclick="confirmar_pedido()">Confirmar pedido </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
