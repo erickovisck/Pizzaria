@@ -1,5 +1,4 @@
 function Calcular() {
-    // Define item prices and names
     const items = {
         pizza_portuguesa: { name: 'Pizza Portuguesa', price: 50.00 },
         pizza_mussarela: { name: 'Pizza Mussarela', price: 50.00 },
@@ -42,10 +41,3 @@ function confirmar_pedido() {
     alert('Pedido Confirmado!')
     location.reload()
 }
-// $('input').on('change', function() {
-//     var max = parseFloat($('inputMax').val());                                     
-//     var min = parseFloat($('input').val());
-//     if (min > max) {
-//         $('.inputMin').val(max);
-//     }
-// });
